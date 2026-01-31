@@ -1,61 +1,43 @@
+---
+import HarmanCard from "./ExperienceComponents/HarmanCard.astro"
+import EmkodeCard from "./ExperienceComponents/EmkodeCard.astro"
+import FiraCard from "./ExperienceComponents/FiraCard.astro"
+import ControlItCard from "./ExperienceComponents/ControlItCard.astro"
+---
+
 <div class="work-experience-section">
     <center> <h2>Work Experience</h2> </center>
 
     <div class="experience-container">
-        <div class="flip-card">
-            <p>04/03/2024 - 30/08/2024</p>
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <center>
-                        <h4>HARMAN DE MEXICO S. DE R.L. DE C.V.</h4>
-                        <img src="/images/Harman.jpg" alt="Johan Harman" style="height: 30vh;"/>
-                    </center>
-                </div>
-
-                <div class="flip-card-back">
-                   <p>
-                    I completed my internship as an Area Manager Support, where I was responsible for tasks such as web design, creating views, forms, and reports, importing data into databases and Excel, implementing graphics, gathering requirements, training staff, and providing support and follow-up.
-                </p>
-                </div>
-
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
             </div>
-        </div>
-        <div class="flip-card">
-            <p>06/10/2025 - 28/11/2025</p>
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <center>
-                        <h4>Emkode</h4>
-                        <img src="/images/Emkode.jpg" alt="Johan Harman" style="height: 30vh;"/>
-                    </center>
+            <div class="carousel-inner" style="height: 80vh;">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <div class="row">
+                        <div class="col-4">
+                            <HarmanCard />
+                        </div>
+                        <div class="col-4">
+                            <EmkodeCard />
+                        </div>
+                        <div class="col-4">
+                            <FiraCard />
+                        </div>
+                    </div>
                 </div>
-
-                <div class="flip-card-back">
-                   <p>
-                    I completed my internship as an Area Manager Support, where I was responsible for tasks such as web design, creating views, forms, and reports, importing data into databases and Excel, implementing graphics, gathering requirements, training staff, and providing support and follow-up.
-                </p>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <div class="row">
+                        <div class="col-4"><ControlItCard /></div>
+                        <div class="col-4"><ControlItCard /></div>
+                        <div class="col-4"><ControlItCard /></div>
+                    </div>
                 </div>
-
             </div>
-        </div>
-        <div class="flip-card">
-            <p>06/10/2025 - 28/11/2025</p>
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <center>
-                        <h4>Fideicomisos instituidos en relacion con la agricultura</h4>
-                        <img src="/images/Fira.png" alt="Johan Harman" style="height: 30vh;"/>
-                    </center>
-                </div>
-
-                <div class="flip-card-back">
-                   <p>
-                    I completed my internship as an Area Manager Support, where I was responsible for tasks such as web design, creating views, forms, and reports, importing data into databases and Excel, implementing graphics, gathering requirements, training staff, and providing support and follow-up.
-                </p>
-                </div>
-
             </div>
-        </div>
+
     </div>
     
 </div>
