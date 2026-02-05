@@ -3,6 +3,9 @@ import HarmanCard from "./ExperienceComponents/HarmanCard.astro"
 import EmkodeCard from "./ExperienceComponents/EmkodeCard.astro"
 import FiraCard from "./ExperienceComponents/FiraCard.astro"
 import ControlItCard from "./ExperienceComponents/ControlItCard.astro"
+import FiraCardExternalSupport from "./ExperienceComponents/FiraCardExternalSupport.astro"
+import SocialService from "./ExperienceComponents/SocialService.astro"
+
 ---
 
 <div class="work-experience-section">
@@ -18,21 +21,22 @@ import ControlItCard from "./ExperienceComponents/ControlItCard.astro"
                 <div class="carousel-item active" data-bs-interval="4000">
                     <div class="row">
                         <div class="col-4">
+                            <SocialService />
+                            
+                        </div>
+                        <div class="col-4">
                             <HarmanCard />
                         </div>
                         <div class="col-4">
                             <EmkodeCard />
                         </div>
-                        <div class="col-4">
-                            <FiraCard />
-                        </div>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="4000">
                     <div class="row">
+                        <div class="col-4"><FiraCard /></div>
                         <div class="col-4"><ControlItCard /></div>
-                        <div class="col-4"><ControlItCard /></div>
-                        <div class="col-4"><ControlItCard /></div>
+                        <div class="col-4"><FiraCardExternalSupport /></div>
                     </div>
                 </div>
             </div>
