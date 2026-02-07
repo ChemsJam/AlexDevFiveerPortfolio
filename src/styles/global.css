@@ -244,6 +244,26 @@ h6 {
   padding: 4px !important;
 }
 
+/* Services styles */
+
+.services-section {
+  background: var(--brand-primary);
+  color: var(--text-main);
+  border-bottom: solid 2px var(--border-subtle);
+  padding: 2rem;
+  text-align: justify;
+  width: 100%;
+  height: auto;
+}
+
+.services-card {
+  background: var(--bg-card);
+  border: solid 2px var(--border-subtle);
+  border-radius: 16px;
+  padding: 1rem;
+}
+/* Footer styles */
+
 .footer { 
   display: flex;
   justify-content: center;
