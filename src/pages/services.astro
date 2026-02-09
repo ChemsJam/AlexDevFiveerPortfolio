@@ -3,166 +3,168 @@ import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout>
-    <div class="Hero d-flex justify-content-center align-items-center p-4">
+    <div class="Hero">
+        <video autoplay loop muted playsinline class="background-video">
+        <source src="https://v.ftcdn.net/05/91/64/30/700_F_591643064_6vAYBDvzWwqG4nlaYhxljZfKx1aEgOjh.mp4" >
+    </video>
+        <div class="d-flex justify-content-center align-items-center p-4">
             <h3>My Services</h3>
     </div>
-    <div class="Hero row d-flex justify-content-center align-items-center p-4">
     
+    <div class=" row d-flex justify-content-center align-items-center p-4">
         <div class="col-11">
             <div class="row services-section">
-        <div class="col-12 d-flex justify-content-center">
-            <div class="col-9">
-                <div class="row">
-                    <div class="row">
-                        <div class="col-10 mt-5 align-self-start services-card">
-                            <div class="row">
-                                <div class="col-4 text-start">
-                                    <h4>Backend REST API Development</h4>
-                                    <hr>
-                                    <ul class="service-list">
-                                        <li>Diseño y desarrollo de APIs REST</li>
-                                        <li>CRUDs bien estructurados</li>
-                                        <li>Autenticación básica (JWT o sesión)</li>
-                                        <li>Documentación con Swagger / OpenAPI</li>
-                                    </ul>
+                <div class="col-12 d-flex justify-content-center p-5">
+                    <div class="col-9">
+                        <div class="row">
+                                <div class="col-10 align-self-start services-card">
+                                    <div class="row">
+                                        <div class="col-4 text-start">
+                                            <h4>Backend REST API Development</h4>
+                                            <hr>
+                                            <ul class="service-list">
+                                                <li>Diseño y desarrollo de APIs REST</li>
+                                                <li>CRUDs bien estructurados</li>
+                                                <li>Autenticación básica (JWT o sesión)</li>
+                                                <li>Documentación con Swagger / OpenAPI</li>
+                                            </ul>
 
-                                    <h4>Frameworks</h4>
-                                    <hr>
-                                    <ul class="service-list">
-                                        <li>Django REST Framework</li>
-                                        <li>Spring Boot(APIs simples)</li>
-                                        <li>Symfony(APIs o módulos backend)</li>
-                                    </ul>
-                                </div>
-                                <div class="col-8 d-flex justify-content-center">
-                                    <img src="/images/ServiceDashboardExample.avif" alt="ServiceDashboardExample" class="rounded img-service-container">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 d-flex justify-content-end ">
-                            <div class="col-10 mt-5 services-card">
-                                <div class="row">
-                                    <div class="col-4 text-start">
-                                        <h4>Backend Features & Maintenance</h4>
-                                        <hr>
-                                        <ul class="service-list">
-                                            <li>Agregar nuevos endpoints</li>
-                                            <li>Ajustes a moodelos y relaciones</li>
-                                            <li>Corrección de bugs</li>
-                                            <li>Mejoras pequeñas en lógica de negocio</li>
-                                            <li>Soporte a código existente</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-8 d-flex justify-content-center">
-                                        <img src="/images/Endpoint.png" alt="ServiceDashboardExample" class="rounded img-service-container">
+                                            <h4>Frameworks</h4>
+                                            <hr>
+                                            <ul class="service-list">
+                                                <li>Django REST Framework</li>
+                                                <li>Spring Boot(APIs simples)</li>
+                                                <li>Symfony(APIs o módulos backend)</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-8 d-flex justify-content-center">
+                                            <img src="/images/ServiceDashboardExample.avif" alt="ServiceDashboardExample" class="rounded img-service-container">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-12 d-flex justify-content-start">
-                            <div class="col-10 mt-5 services-card">
-                                <div class="row">
-                                    <div class="col-4 text-start">
-                                        <h4>Frontend API Integration</h4>
-                                        <hr>
-                                        <ul class="service-list">
-                                            <li>Consumo de APIs REST</li>
-                                            <li>Formularios conectados a backend</li>
-                                            <li>Autenticación básica</li>
-                                            <li>Dashboards simples</li>
-                                        </ul>
+                                <div class="col-12 d-flex justify-content-end ">
+                                    <div class="col-10 mt-5 services-card">
+                                        <div class="row">
+                                            <div class="col-4 text-start">
+                                                <h4>Backend Features & Maintenance</h4>
+                                                <hr>
+                                                <ul class="service-list">
+                                                    <li>Agregar nuevos endpoints</li>
+                                                    <li>Ajustes a moodelos y relaciones</li>
+                                                    <li>Corrección de bugs</li>
+                                                    <li>Mejoras pequeñas en lógica de negocio</li>
+                                                    <li>Soporte a código existente</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-8 d-flex justify-content-center">
+                                                <img src="/images/Endpoint.png" alt="ServiceDashboardExample" class="rounded img-service-container">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-start">
+                                    <div class="col-10 mt-5 services-card">
+                                        <div class="row">
+                                            <div class="col-4 text-start">
+                                                <h4>Frontend API Integration</h4>
+                                                <hr>
+                                                <ul class="service-list">
+                                                    <li>Consumo de APIs REST</li>
+                                                    <li>Formularios conectados a backend</li>
+                                                    <li>Autenticación básica</li>
+                                                    <li>Dashboards simples</li>
+                                                </ul>
 
-                                        <h4>Tecnologías</h4>
-                                        <ul class="service-list">
-                                            <li>Angular (formularios, servicios HTTP)</li>
-                                            <li>React (integraciones simples)</li>
-                                            <li>Astro (sitios estáticos con backend)</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-8 d-flex justify-content-center">
-                                        <img src="/images/APIIntegration.webp" alt="ServiceDashboardExample" class="rounded img-service-container">
+                                                <h4>Tecnologías</h4>
+                                                <ul class="service-list">
+                                                    <li>Angular (formularios, servicios HTTP)</li>
+                                                    <li>React (integraciones simples)</li>
+                                                    <li>Astro (sitios estáticos con backend)</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-8 d-flex justify-content-center">
+                                                <img src="/images/APIIntegration.webp" alt="ServiceDashboardExample" class="rounded img-service-container">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-12 d-flex justify-content-end">
-                            <div class="col-10 mt-5 services-card">
-                                <div class="row">
-                                    <div class="col-4 text-start">
-                                        <h4>Basic Dashboards & Reports</h4>
-                                        <hr>
-                                        <ul class="service-list">
-                                            <li>Gráficas de datos</li>
-                                            <li>Reportes básicos</li>
-                                            <li>Tablas filtrables</li>
-                                            <li>Visualización de métricas simples</li>
-                                        </ul>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <div class="col-10 mt-5 services-card">
+                                        <div class="row">
+                                            <div class="col-4 text-start">
+                                                <h4>Basic Dashboards & Reports</h4>
+                                                <hr>
+                                                <ul class="service-list">
+                                                    <li>Gráficas de datos</li>
+                                                    <li>Reportes básicos</li>
+                                                    <li>Tablas filtrables</li>
+                                                    <li>Visualización de métricas simples</li>
+                                                </ul>
 
-                                        <h4>Tecnologías</h4>
-                                        <ul class="service-list">
-                                            <li>Chart.js</li>
-                                            <li>Bootstrap / PrimeNG</li>
-                                            <li>APIs REST</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-8 d-flex justify-content-center">
-                                        <img src="/images/Reports.png" alt="ServiceDashboardExample" class="rounded img-service-container">
+                                                <h4>Tecnologías</h4>
+                                                <ul class="service-list">
+                                                    <li>Chart.js</li>
+                                                    <li>Bootstrap / PrimeNG</li>
+                                                    <li>APIs REST</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-8 d-flex justify-content-center">
+                                                <img src="/images/Reports.png" alt="ServiceDashboardExample" class="rounded img-service-container">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-12 d-flex justify-content-start">
-                            <div class="col-10 mt-5 services-card">
-                                <div class="row">
-                                    <div class="col-4 text-start">
-                                        <h4>Basic Python Automation Scripts</h4>
-                                        <hr>
-                                        <ul class="service-list">
-                                            <li>Scripts pequeños</li>
-                                            <li>Automatización simple</li>
-                                            <li>Procesamiento básico de datos</li>
-                                            <li>Tareas repetitivas</li>
-                                        </ul>
+                                <div class="col-12 d-flex justify-content-start">
+                                    <div class="col-10 mt-5 services-card">
+                                        <div class="row">
+                                            <div class="col-4 text-start">
+                                                <h4>Basic Python Automation Scripts</h4>
+                                                <hr>
+                                                <ul class="service-list">
+                                                    <li>Scripts pequeños</li>
+                                                    <li>Automatización simple</li>
+                                                    <li>Procesamiento básico de datos</li>
+                                                    <li>Tareas repetitivas</li>
+                                                </ul>
 
-                                        <h4>Tecnologías</h4>
-                                        <ul class="service-list">
-                                            <li>Chart.js</li>
-                                            <li>Bootstrap / PrimeNG</li>
-                                            <li>APIs REST</li>
-                                        </ul>
+                                                <h4>Tecnologías</h4>
+                                                <ul class="service-list">
+                                                    <li>Chart.js</li>
+                                                    <li>Bootstrap / PrimeNG</li>
+                                                    <li>APIs REST</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-8 d-flex justify-content-center">
+                                                <img src="/images/Bot.png" alt="ServiceDashboardExample" class="rounded img-service-container">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-8 d-flex justify-content-center">
-                                        <img src="/images/Bot.png" alt="ServiceDashboardExample" class="rounded img-service-container">
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <div class="col-10 mt-5 services-card">
+                                        <div class="row">
+                                            <div class="col-4 text-start">
+                                                <h4>Project Setup & Configuration</h4>
+                                                <hr>
+                                                <ul class="service-list">
+                                                    <li>Inicialización de proyectos backend</li>
+                                                    <li>Configuración de entorno (.env)</li>
+                                                    <li>Base de datos (PostgreSQL)datos</li>
+                                                    <li>Estructura inicial del proyecto</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-8 d-flex justify-content-center">
+                                                <img src="/images/Setup.png" alt="ServiceDashboardExample" class="rounded img-service-container">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-12 d-flex justify-content-end">
-                            <div class="col-10 mt-5 services-card">
-                                <div class="row">
-                                    <div class="col-4 text-start">
-                                        <h4>Project Setup & Configuration</h4>
-                                        <hr>
-                                        <ul class="service-list">
-                                            <li>Inicialización de proyectos backend</li>
-                                            <li>Configuración de entorno (.env)</li>
-                                            <li>Base de datos (PostgreSQL)datos</li>
-                                            <li>Estructura inicial del proyecto</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-8 d-flex justify-content-center">
-                                        <img src="/images/Setup.png" alt="ServiceDashboardExample" class="rounded img-service-container">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-        </div>
+    <div class="p-5"></div>
     </div>
-    
-<div class="Hero p-5"></div>
 </Layout>

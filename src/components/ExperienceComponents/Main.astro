@@ -1,4 +1,19 @@
-<div class="Hero flex justify-center">
+
+---
+import HarmanCard from "./ExperienceCards/HarmanCard.astro"
+import EmkodeCard from "./ExperienceCards/EmkodeCard.astro"
+import FiraCard from "./ExperienceCards/FiraCard.astro"
+import ControlItCard from "./ExperienceCards/ControlItCard.astro"
+import FiraCardExternalSupport from "./ExperienceCards/FiraCardExternalSupport.astro"
+import SocialServiceCard from "./ExperienceCards/SocialServiceCard.astro"
+
+---
+
+<div class="Hero">
+    <div class="flex justify-center">
+    <video autoplay loop muted playsinline class="background-video">
+        <source src="https://v.ftcdn.net/05/91/64/30/700_F_591643064_6vAYBDvzWwqG4nlaYhxljZfKx1aEgOjh.mp4" >
+    </video>
     <div class="flip-card">
         <div class="flip-card-inner">
             
@@ -37,4 +52,46 @@
             </div>
         </div>
     </div>
+</div>
+<div class="row d-flex justify-content-center align-items-center p-4">
+    
+    <div class="col-11">
+        <div class="work-experience-section">
+    <center> <h2>Work Experience</h2> </center>
+
+    <div class="experience-container">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner" style="height: 100vh;">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <div class="row">
+                        <div class="col-4">
+                            <SocialServiceCard />
+                        </div>
+                        <div class="col-4">
+                            <HarmanCard />
+                        </div>
+                        <div class="col-4">
+                            <EmkodeCard />
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <div class="row">
+                        <div class="col-4"><FiraCard /></div>
+                        <div class="col-4"><ControlItCard /></div>
+                        <div class="col-4"><FiraCardExternalSupport /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="Hero p-5"></div>
 </div>
