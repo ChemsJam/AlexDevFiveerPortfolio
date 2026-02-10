@@ -9,89 +9,83 @@ import SocialServiceCard from "./ExperienceCards/SocialServiceCard.astro"
 
 ---
 
-<div class="Hero">
-    <div class="flex justify-center">
-    <video autoplay loop muted playsinline class="background-video">
-        <source src="https://v.ftcdn.net/05/91/64/30/700_F_591643064_6vAYBDvzWwqG4nlaYhxljZfKx1aEgOjh.mp4" >
-    </video>
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            
-            <div class="flip-card-front">
-                <img src="/images/JohanHarman.jpeg" alt="Johan Harman" />
-            </div>
-
-            <div class="flip-card-back">
-                <img src="/images/JohanChibi.jpg" alt="Johan Harman" />
-            </div>
-
-        </div>
-    </div>
-    <div class="about-me">
-        <h4>Hello I am <strong> Johan Alejandro Ontiveros Alfaro</strong></h4>
-        <p>
-            I see myself as a future FullStack developer, and I am focused on learning to apply django in the backend and the use of React in frontend.
-        </p>
-        <div class="section flex justify-between">
-            <div class="skills">
-                <p>
-                    Some of my technical skills:
-                </p>
-                <ul>
-                    <li>Lenguajes: "Spanish: native" and "English: B1".</li>
-                    <li>Programming languages: JavaScript, Python and PHP</li>
-                    <li>Frameworks: Django and Symfony</li>
-                    <li>Libraries: React, JQuery, ChartJS</li>
-                    <li>DataBases: MySQL, MariaDB, firebase and SQLServer</li>
-                    <li>Im learning: Django, React (Vite), Astro, PostgreSQL and SQLServer</li>
-                </ul>
-            </div>
-            <div class="cv">
-                <button class="cv-button">Download Spanish CV</button>
-                <button class="cv-button">Download English CV</button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row d-flex justify-content-center align-items-center p-4">
+<div class="Hero p-5">
     
-    <div class="col-11">
-        <div class="work-experience-section">
-    <center> <h2>Work Experience</h2> </center>
-
-    <div class="experience-container">
-        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            </div>
-            <div class="carousel-inner" style="height: 100vh;">
-                <div class="carousel-item active" data-bs-interval="4000">
-                    <div class="row">
-                        <div class="col-4">
-                            <SocialServiceCard />
+    <div class="row d-flex justify-content-center align-items-center ">
+        
+        <div class="col-10">
+            <div class="about-me-section translate-left mt-5">
+                <div class="flex justify-center align-items-center about-me translate-up">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="/images/JohanHarman.jpeg" alt="Johan Harman" />
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="/images/JohanChibi.jpg" alt="Johan Harman" />
+                            </div>
                         </div>
-                        <div class="col-4">
-                            <HarmanCard />
-                        </div>
-                        <div class="col-4">
-                            <EmkodeCard />
+                    </div>
+                    <div>
+                    <h4>Hello I am <strong> Johan Alejandro Ontiveros Alfaro</strong></h4>
+                    <p>
+                        I see myself as a future FullStack developer, and I am focused on learning to apply django in the backend and the use of React in frontend.
+                    </p>
+                    <hr>
+                        <div class="section d-flex justify-between">
+                            <div class="skills">
+                                <p>
+                                    Some of my technical skills:
+                                </p>
+                                <ul>
+                                    <li>Lenguajes: "Spanish: native" and "English: B1".</li>
+                                    <li>Programming languages: JavaScript, Python and PHP</li>
+                                    <li>Frameworks: Django and Symfony</li>
+                                    <li>Libraries: React, JQuery, ChartJS</li>
+                                    <li>DataBases: MySQL, MariaDB, firebase and SQLServer</li>
+                                    <li>Im learning: Django, React (Vite), Astro, PostgreSQL and SQLServer</li>
+                                </ul>
+                            </div>
+                            <div class="cv">
+                                <button class="cv-button">Download Spanish CV</button>
+                                <button class="cv-button">Download English CV</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="4000">
-                    <div class="row">
-                        <div class="col-4"><FiraCard /></div>
-                        <div class="col-4"><ControlItCard /></div>
-                        <div class="col-4"><FiraCardExternalSupport /></div>
+            </div>
+            <div class="work-experience-section translate-right mt-5">
+            <h2 class="text-center">Work Experience</h2>
+                <div class="experience-container">
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner" style="height: 100vh;">
+                            <div class="carousel-item active" data-bs-interval="4000">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <SocialServiceCard />
+                                    </div>
+                                    <div class="col-4">
+                                        <HarmanCard />
+                                    </div>
+                                    <div class="col-4">
+                                        <EmkodeCard />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                            <div class="row">
+                                <div class="col-4"><FiraCard /></div>
+                                <div class="col-4"><ControlItCard /></div>
+                                <div class="col-4"><FiraCardExternalSupport /></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-    </div>
-</div>
-
-<div class="Hero p-5"></div>
 </div>
