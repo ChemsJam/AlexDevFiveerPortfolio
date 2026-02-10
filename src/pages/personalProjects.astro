@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import AlexisPortfolio from '../components/personalProjectsComponents/AlexisPortfolio.astro';
+import JohanDjangoPortfolio from '../components/personalProjectsComponents/JohanDjangoPortfolio.astro';
+import JohanAstroPortfolio from '../components/personalProjectsComponents/JohanAstroPortfolio.astro';
+
+import StardewValleyAngularClon from '../components/clonProjectsComponents/StardewValleyAngularClone.astro';
+import FigmaOracleJetClone from '../components/clonProjectsComponents/FigmaOracleJetClone.astro';
+---
+
+<Layout>
+    <div class="Hero">
+        <div class="row justify-content-center p-5">
+            <div class="col-10 translate-up mt-4">
+                
+                <div class="services-section mb-5">
+                    <h1 class="text-center">Clon projects</h1>
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <StardewValleyAngularClon />
+                        <FigmaOracleJetClone />
+                    </div>
+                </div>
+
+                <div class="services-section mt-5">
+                    <h1 class="text-center">Portfolios web</h1>
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <AlexisPortfolio />
+                        <JohanAstroPortfolio />
+                        <JohanDjangoPortfolio />
+                    </div>
+                </div>
+                <!-- <div class="services-section">
+                    
+                </div> -->
+            </div>
+        </div>
+    </div>
+</Layout>

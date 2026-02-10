@@ -342,6 +342,40 @@ h6 {
   inset 0 0 0 1px rgba(255, 255, 255, 0.03);
 }
 
+/* Personal projects */
+
+.project-card {
+  background: var(--bg-card);
+  border: solid 0.5rem var(--brand-primary);
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow:
+  -32px -32px 16px rgba(0, 0, 0, 0.6), inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+}
+
+.project-image {
+  border-radius: 16px;
+  border: solid 0.5rem var(--border-subtle);
+  box-shadow:
+  -16px 16px 30px rgba(0, 0, 0, 0.6),
+  inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+}
+
+.view-live-button {
+  background: var(--bg-card-back);
+  padding: 0.5rem;
+  border-radius: 16px;
+  border: solid 0.25rem var(--brand-primary);
+  color: var(--text-secondary);
+  box-shadow:
+  -16px 16px 30px rgba(0, 0, 0, 0.6),
+  inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+}
+
+.view-live-button a {
+  text-decoration: none;
+}
+
 /* Footer styles */
 
 .footer { 
