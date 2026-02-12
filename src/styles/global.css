@@ -79,7 +79,6 @@ h6 {
 .Hero {
   align-items: center;
   color: var(--text-main);
-  padding: 1rem;
   overflow: hidden;
   background: var(--brand-primary);
 }
@@ -93,8 +92,6 @@ h6 {
     background: var(--bg-card-back);
     border-radius: 8px;
     border: solid 0.2rem var(--border-subtle);
-    box-shadow:
-    -16px -16px 16px rgba(0, 0, 0, 0.6), inset 0 0 0 1px rgba(255, 255, 255, 0.03);
 }
 
 .cv-button:hover {
@@ -162,28 +159,9 @@ h6 {
     padding: 2rem;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .Hero .flip-card {
-        max-width: 250px; /* Más pequeño en tablets */
-    }
-}
-
-@media (max-width: 480px) {
-    .Hero .flip-card {
-        max-width: 200px; /* Más pequeño en móviles */
-    }
-    
-    .Hero-content {
-        gap: 1rem;
-        padding: 1rem;
-    }
-}
-
 .about-me-section {
   background: var(--bg-main-card);
   color: var(--text-main);
-  padding: 2rem;
   border-radius: 16px;
   border: solid 0.5rem var(--border-subtle);
   text-align: justify;
@@ -220,7 +198,7 @@ h6 {
     border: solid 0.5rem var(--border-subtle);
     text-align: justify;
     width: 100%;
-    padding: 2rem;
+    padding-top: 2rem;
     height: auto;
     box-shadow: -32px -32px 16px rgba(0, 0, 0, 0.6), 
                 inset 0 0 0 1px rgba(255, 255, 255, 0.03);
@@ -236,12 +214,12 @@ h6 {
 /* Altura del carousel según dispositivo */
 #carouselDesktop, .carousel-inner {
     padding: 0 2rem;
-    height: 90vh;
-    width: 100%;
+    height: 100vh;
+    min-width: 100%;
 }
 
 #carouselMobile .carousel-inner {
-    padding: 1rem 0;
+    padding: 1rem;
     min-height: 100%;
 }
 
@@ -275,18 +253,17 @@ h6 {
 .work-experience-section .flip-card-experience-front,
 .work-experience-section .flip-card-experience-back {
     position: absolute;
+    width: 36vh;
     inset: 0;
-    width: 100%;
-    height: 100%;
     background: var(--bg-card-back);
-    border: solid 0.5rem var(--brand-primary);
+    border: solid 0.5rem var(--border-subtle);
     backface-visibility: hidden;
     border-radius: 16px;
     overflow-y: auto;
     overflow-x: hidden;
     text-align: justify;
-    box-shadow: -1rem -1rem 16px rgba(0, 0, 0, 0.6), 
-                inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+    box-shadow: 8px 8px 21px rgba(0, 0, 0, 0.6), 
+                    inset 0 0 0 1px rgba(255, 255, 255, 0.03);
 }
 
 .work-experience-section .flip-card-experience-back {
@@ -511,5 +488,59 @@ h6 {
 @media (min-width: 1024px) {
     .navbar {
         height: 12vh;
+    }
+    .about-me-section {
+        box-shadow:
+        -16px -16px 16px rgba(0, 0, 0, 0.6), inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+    }
+    .technologies {
+        padding: 0.5rem;
+        margin: 0.5rem ;
+    }
+
+    .technologies li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: auto;
+        padding: 0.25rem;
+    }
+
+    .technologies li span {
+        font-size: 0.75rem;
+        margin-top: 0.25rem;
+    }
+
+    .work-experience-section .flip-card-experience-front,
+    .work-experience-section .flip-card-experience-back {
+        width: 100%;
+        height: 80vh;
+        box-shadow: -1rem -1rem 16px rgba(0, 0, 0, 0.6), 
+                    inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+    }
+
+    .work-experience-section .flip-card-experience-front img {
+        height: 22vh;
+    }
+
+    
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .Hero .flip-card {
+        max-width: 250px; /* Más pequeño en tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .Hero .flip-card {
+        max-width: 200px; /* Más pequeño en móviles */
+    }
+    
+    .Hero-content {
+        gap: 1rem;
+        padding: 1rem;
     }
 }
