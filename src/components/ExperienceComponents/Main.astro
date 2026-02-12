@@ -9,30 +9,32 @@ import SocialServiceCard from "./ExperienceCards/SocialServiceCard.astro"
 
 ---
 
-<div class="Hero p-5">
+<div class="Hero">
     
     <div class="row d-flex justify-content-center align-items-center ">
         
-        <div class="col-10">
-            <div class="about-me-section translate-left mt-5">
-                <div class="flex justify-center align-items-center about-me translate-up">
-                    <div class="flip-card">
+        <div class="col-12 col-md-10 p-5">
+            <div class="about-me-section translate-left mt-1">
+                <div class="row d-flex justify-content-center align-items-center about-me translate-up">
+                    <div class="col-12 col-md-3 col-lg-4 mb-3 d-flex justify-content-center align-items-center">
+                        <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <img src="/images/JohanHarman.jpeg" alt="Johan Harman" />
+                                <img src="/images/JohanHarman.jpeg" alt="Johan Harman" class="img-fluid" />
                             </div>
                             <div class="flip-card-back">
-                                <img src="/images/JohanChibi.jpg" alt="Johan Harman" />
+                                <img src="/images/JohanChibi.jpg" alt="Johan Harman" class="img-fluid" />
                             </div>
                         </div>
+                        </div>
                     </div>
-                    <div>
+                    <div class="col-12 col-md-9 col-lg-8">
                     <h4>Hello I am <strong> Johan Alejandro Ontiveros Alfaro</strong></h4>
                     <p>
                         I see myself as a future FullStack developer, and I am focused on learning to apply django in the backend and the use of React in frontend.
                     </p>
                     <hr>
-                        <div class="section d-flex justify-between">
+                        <div class="section">
                             <div class="skills">
                                 <p>
                                     Some of my technical skills:
@@ -46,46 +48,134 @@ import SocialServiceCard from "./ExperienceCards/SocialServiceCard.astro"
                                     <li>Im learning: Django, React (Vite), Astro, PostgreSQL and SQLServer</li>
                                 </ul>
                             </div>
-                            <div class="cv">
-                                <button class="cv-button">Download Spanish CV</button>
-                                <button class="cv-button">Download English CV</button>
+                           
+                        </div>
+                    </div>
+                    <div class="col-10">
+                       <div class="row d-flex justify-content-center align-items-center mt-5">
+                            <div class="col-12 col-sm-6 d-flex justify-content-center align-items-center">
+                                <button class="cv-button mb-3 p-1">Download Spanish CV</button>
+                            </div>
+                            <div class="col-12 col-sm-6 d-flex justify-content-center align-items-center">
+                                <button class="cv-button mb-3 p-1">Download English CV</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="work-experience-section translate-right mt-5">
-            <h2 class="text-center">Work Experience</h2>
+                <h2 class="text-center mb-4">Work Experience</h2>
                 <div class="experience-container">
-                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    
+                    <!-- CAROUSEL DESKTOP (3 cards por slide) -->
+                    <div id="carouselDesktop" class="carousel slide d-none d-lg-block" data-bs-ride="carousel">
                         <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselDesktop" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselDesktop" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         </div>
-                        <div class="carousel-inner" style="height: 100vh;">
-                            <div class="carousel-item active" data-bs-interval="4000">
-                                <div class="row">
-                                    <div class="col-4">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" >
+                                <div class="row g-3">
+                                    <div class="col-md-4">
                                         <SocialServiceCard />
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-md-4">
                                         <HarmanCard />
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-md-4">
                                         <EmkodeCard />
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item" data-bs-interval="4000">
-                            <div class="row">
-                                <div class="col-4"><FiraCard /></div>
-                                <div class="col-4"><ControlItCard /></div>
-                                <div class="col-4"><FiraCardExternalSupport /></div>
+                            <div class="carousel-item">
+                                <div class="row g-3">
+                                    <div class="col-md-4">
+                                        <FiraCard />
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ControlItCard />
+                                    </div>
+                                    <div class="col-md-4">
+                                        <FiraCardExternalSupport />
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDesktop" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselDesktop" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
+
+                    <!-- CAROUSEL MÓVIL (1 card por slide) -->
+                    <div id="carouselMobile" class="carousel slide d-lg-none" data-bs-ride="carousel" >
+                        <div class="carousel-indicators" >
+                            <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        </div>
+                        <div class="carousel-inner"  >
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <div class="row">
+                                    <div class="col-12 experience-card">
+                                        <SocialServiceCard />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <div class="row">
+                                    <div class="col-12 experience-card">
+                                        <HarmanCard />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <div class="row">
+                                    <div class="col-12 experience-card">
+                                        <EmkodeCard />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <div class="row">
+                                    <div class="col-12 experience-card">
+                                        <FiraCard />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <div class="row">
+                                    <div class="col-12 experience-card">
+                                        <ControlItCard />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <div class="row">
+                                    <div class="col-12 experience-card">
+                                        <FiraCardExternalSupport />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMobile" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselMobile" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
                 </div>
             </div>
-        </div>
     </div>
 </div>
