@@ -465,11 +465,11 @@ h6 {
 
 @media (max-width: 480px) and (min-height: 701px) {
     .work-experience-section .flip-card-experience {
-        height: 60vh;
+        height: 74vh;
     }
 
     .experience-card {
-        width: 33vh;
+        width: 40vh;
     }
     
     .technologies li {
@@ -477,7 +477,7 @@ h6 {
     }
 
     #carouselMobile .carousel-inner {
-        height: 75vh;
+        height: 90vh;
     }
     .services-section {
         padding: 0.5rem;
