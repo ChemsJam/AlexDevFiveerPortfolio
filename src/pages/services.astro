@@ -1,182 +1,292 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
     <div class="Hero p-3 p-md-3">
-    <div class="row d-flex justify-content-center align-items-center m-1 pt-md-5">
-        
-        <div class="col-12 col-md-10">
-            <div class="row services-section translate-right mt-1">
-                <h2 class="text-center">My Services</h2>
-                
-                <div class="col-12 d-flex justify-content-center p-4">
-                    <div class="col-12 col-md-10">
-                        <div class="row translate-right">
-                            <hr>
-                            <h3>Backend REST API Development</h3>
-                            <div class="col-12 col-md-9 align-self-start services-card  p-2 mt-4 mb-2">
-                                
+        <div
+            class="row d-flex justify-content-center m-1 pt-md-5"
+        >
+            <div class="col-12 col-md-12 col-lg-10">
+                <div class="row services-section translate-right mt-1">
+                    <h2 class="p-2 pt-3 text-center">My Services</h2>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div
+                            class="row translate-right mt-4 d-flex justify-content-center align-items-start"
+                        >
+                            <hr />
+                            <h3 class="p-4 pb-3 pt-3 text-center fs-3">
+                                Backend REST API Development
+                            </h3>
+                            <div
+                                class="col-12 col-md-12 col-lg-12 align-self-center services-card"
+                            >
                                 <div class="row">
-                                    <div class="col-12 col-md-4  text-start">
-                                        
+                                    <div
+                                        class="col-12 col-md-12 d-flex justify-content-center"
+                                    >
+                                        <img
+                                            src="/images/ServiceDashboardExample.avif"
+                                            alt="ServiceDashboardExample"
+                                            class="img-fluid project-image"
+                                        />
+                                    </div>
+                                    <div
+                                        class="col-12 col-md-12 text-start fs-6"
+                                    >
                                         <ul class="service-list">
-                                            <li>Diseño y desarrollo de APIs REST</li>
+                                            <li>
+                                                Diseño y desarrollo de APIs REST
+                                            </li>
                                             <li>CRUDs bien estructurados</li>
-                                            <li>Autenticación básica (JWT o sesión)</li>
-                                            <li>Documentación con Swagger / OpenAPI</li>
+                                            <li>
+                                                Autenticación básica (JWT o
+                                                sesión)
+                                            </li>
+                                            <li>
+                                                Documentación con Swagger /
+                                                OpenAPI
+                                            </li>
                                         </ul>
                                         <h4>Frameworks</h4>
-                                        <hr>
+                                        <hr />
                                         <ul class="service-list">
                                             <li>Django REST Framework</li>
                                             <li>Spring Boot(APIs simples)</li>
-                                            <li>Symfony(APIs o módulos backend)</li>
+                                            <li>
+                                                Symfony(APIs o módulos backend)
+                                            </li>
                                         </ul>
-                                    </div>
-                                    <div class="col-12 col-md-8 d-flex justify-content-center">
-                                        <img src="/images/ServiceDashboardExample.avif" alt="ServiceDashboardExample" class="img-fluid project-image">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-4 translate-right">
-                            <hr>
-                            <h2 class="text-end">Backend Features & Maintenance</h2>
-                            <div class="col-12 d-flex justify-content-end ">
-                                
-                                <div class="col-12 col-md-9 mt-4 services-card p-4 mb-2">
-                                            
-                                    <div class="row">
-                                        <div class="col-12 col-md-8 d-flex justify-content-center">
-                                            <img src="/images/Endpoint.png" alt="ServiceDashboardExample" class="img-fluid project-image">
-                                        </div>
-                                        <div class="col-12 col-md-4 text-start">
-                                            <ul class="service-list">
-                                                <li>Agregar nuevos endpoints</li>
-                                                <li>Ajustes a moodelos y relaciones</li>
-                                                <li>Corrección de bugs</li>
-                                                <li>Mejoras pequeñas en lógica de negocio</li>
-                                                <li>Soporte a código existente</li>
-                                            </ul>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row translate-right mt-3">
-                            <hr>
-                            <h2>Frontend API Integration</h2>
-                             <div class="col-12 d-flex justify-content-start">
-                                <div class="col-12 col-md-9 mt-4 services-card p-4 mb-2">
-                                    <div class="row">
-                                        <div class="col-12 col-md-4 text-start">
-                                            <ul class="service-list">
-                                                <li>Consumo de APIs REST</li>
-                                                <li>Formularios conectados a backend</li>
-                                                <li>Autenticación básica</li>
-                                                <li>Dashboards simples</li>
-                                            </ul>
-
-                                            <h4>Tecnologías</h4>
-                                            <ul class="service-list">
-                                                <li>Angular (formularios, servicios HTTP)</li>
-                                                <li>React (integraciones simples)</li>
-                                                <li>Astro (sitios estáticos con backend)</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-12 col-md-8 d-flex justify-content-center">
-                                            <img src="/images/APIIntegration.webp" alt="ServiceDashboardExample" class="img-fluid project-image">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-5 translate-right ">
-                                <hr>
-                                <h2 class="text-end">Basic Dashboards & Reports</h2>
-                                <div class="col-12 d-flex justify-content-end">
-                                <div class="col-12 col-md-9 mt-4 services-card p-4 mb-2">
-                                    <div class="row">
-                                        <div class="col-12 col-md-8 d-flex justify-content-center">
-                                            <img src="/images/Reports.png" alt="ServiceDashboardExample" class="img-fluid project-image">
-                                        </div>
-                                        <div class="col-12 col-md-4 text-start">
-                                            <hr>
-                                            <ul class="service-list">
-                                                <li>Gráficas de datos</li>
-                                                <li>Reportes básicos</li>
-                                                <li>Tablas filtrables</li>
-                                                <li>Visualización de métricas simples</li>
-                                            </ul>
-
-                                            <h4>Tecnologías</h4>
-                                            <ul class="service-list">
-                                                <li>Chart.js</li>
-                                                <li>Bootstrap / PrimeNG</li>
-                                                <li>APIs REST</li>
-                                            </ul>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row translate-right mt-3">
-                            <hr>
-                            <h2>Basic Python Automation Scripts</h2>
-                            <div class="col-12 d-flex justify-content-start">
-                                <div class="col-12 col-md-9 mt-4 services-card p-4 mb-2">
-                                    <div class="row">
-                                        <div class="col-12 col-md-4 text-start">
-                                            
-                                            <hr>
-                                            <ul class="service-list">
-                                                <li>Scripts pequeños</li>
-                                                <li>Automatización simple</li>
-                                                <li>Procesamiento básico de datos</li>
-                                                <li>Tareas repetitivas</li>
-                                            </ul>
-
-                                            <h4>Tecnologías</h4>
-                                            <ul class="service-list">
-                                                <li>Chart.js</li>
-                                                <li>Bootstrap / PrimeNG</li>
-                                                <li>APIs REST</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-12 col-md-8 d-flex justify-content-center">
-                                            <img src="/images/Bot.png" alt="ServiceDashboardExample" class="img-fluid project-image">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="row mt-3 translate-right">
-                                <hr>
-                                <h2 class="text-end">Project Setup & Configuration</h2>
-                                <div class="col-12 d-flex justify-content-end">
-                                <div class="col-12 col-md-9 mt-4 services-card p-4 mb-2">
-                                    <div class="row">
-                                        <div class="col-12 col-md-8 d-flex justify-content-center">
-                                            <img src="/images/Setup.png" alt="ServiceDashboardExample" class="img-fluid project-image">
-                                        </div>
-                                        <div class="col-12 col-md-4 text-start">
-                                            <hr>
-                                            <ul class="service-list">
-                                                <li>Inicialización de proyectos backend</li>
-                                                <li>Configuración de entorno (.env)</li>
-                                                <li>Base de datos (PostgreSQL)datos</li>
-                                                <li>Estructura inicial del proyecto</li>
-                                            </ul>
-                                        </div>
-                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div
+                            class="row translate-right m-1 d-flex justify-content-center mt-4"
+                        >
+                            <hr />
+                            <h2 class="p-4 pb-3 pt-3 text-center fs-3">
+                                Basic Python Automation Scripts
+                            </h2>
+                            <div
+                                class="col-12 col-md-12 col-lg-12 mt-4 services-card p-4 mb-2"
+                            >
+                                <div class="row">
+                                    <div
+                                        class="col-12 col-md-12 d-flex justify-content-center"
+                                    >
+                                        <img
+                                            src="/images/Bot.png"
+                                            alt="ServiceDashboardExample"
+                                            class="img-fluid project-image"
+                                        />
+                                    </div>
+                                    <div class="col-12 col-md-12 text-start">
+                                        <hr />
+                                        <ul class="service-list">
+                                            <li>Scripts pequeños</li>
+                                            <li>Automatización simple</li>
+                                            <li>
+                                                Procesamiento básico de datos
+                                            </li>
+                                            <li>Tareas repetitivas</li>
+                                        </ul>
+
+                                        <h4>Tecnologías</h4>
+                                        <ul class="service-list">
+                                            <li>Chart.js</li>
+                                            <li>Bootstrap / PrimeNG</li>
+                                            <li>APIs REST</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div
+                            class="row translate-right m-1 d-flex justify-content-center mt-4"
+                        >
+                            <hr />
+                            <h2 class="p-4 pb-3 pt-3 text-center fs-3">
+                                Basic Dashboards & Reports
+                            </h2>
+                            <div
+                                class="col-12 col-md-12 col-lg-12 mt-4 services-card p-4 mb-2"
+                            >
+                                <div class="row">
+                                    <div
+                                        class="col-12 col-md-12 d-flex justify-content-center"
+                                    >
+                                        <img
+                                            src="/images/Reports.png"
+                                            alt="ServiceDashboardExample"
+                                            class="img-fluid project-image"
+                                        />
+                                    </div>
+                                    <div class="col-12 col-md-12 text-start">
+                                        <hr />
+                                        <ul class="service-list">
+                                            <li>Gráficas de datos</li>
+                                            <li>Reportes básicos</li>
+                                            <li>Tablas filtrables</li>
+                                            <li>
+                                                Visualización de métricas
+                                                simples
+                                            </li>
+                                        </ul>
+
+                                        <h4>Tecnologías</h4>
+                                        <ul class="service-list">
+                                            <li>Chart.js</li>
+                                            <li>Bootstrap / PrimeNG</li>
+                                            <li>APIs REST</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div
+                            class="row translate-right m-1 d-flex justify-content-center mt-4"
+                        >
+                            <hr />
+                            <h2 class="p-4 pb-3 pt-3 text-center fs-3">
+                                Frontend API Integration
+                            </h2>
+                            <div
+                                class="col-12 col-md-12 col-lg-12 mt-4 services-card p-4 mb-2"
+                            >
+                                <div class="row">
+                                    <div
+                                        class="col-12 col-md-12 d-flex justify-content-center"
+                                    >
+                                        <img
+                                            src="/images/APIIntegration.webp"
+                                            alt="ServiceDashboardExample"
+                                            class="img-fluid project-image"
+                                        />
+                                    </div>
+                                    <div
+                                        class="col-12 col-md-12 text-start fs-6"
+                                    >
+                                        <ul class="service-list">
+                                            <li>Consumo de APIs REST</li>
+                                            <li>
+                                                Formularios conectados a backend
+                                            </li>
+                                            <li>Autenticación básica</li>
+                                            <li>Dashboards simples</li>
+                                        </ul>
+
+                                        <h4>Tecnologías</h4>
+                                        <hr />
+                                        <ul class="service-list">
+                                            <li>
+                                                Angular (formularios, servicios
+                                                HTTP)
+                                            </li>
+                                            <li>
+                                                React (integraciones simples)
+                                            </li>
+                                            <li>
+                                                Astro (sitios estáticos con
+                                                backend)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div
+                            class="row translate-right m-1 d-flex justify-content-center mt-4"
+                        >
+                            <hr />
+                            <h2 class="p-4 pb-3 pt-3 text-center fs-3">
+                                Backend Features & Maintenance
+                            </h2>
+                            <div
+                                class="col-12 col-md-12 col-lg-12 mt-4 services-card p-4 mb-2"
+                            >
+                                <div class="row">
+                                    <div
+                                        class="col-12 col-md-12 d-flex justify-content-center"
+                                    >
+                                        <img
+                                            src="/images/Endpoint.png"
+                                            alt="ServiceDashboardExample"
+                                            class="img-fluid project-image"
+                                        />
+                                    </div>
+                                    <div
+                                        class="col-12 col-md-12 text-start fs-6"
+                                    >
+                                        <ul class="service-list">
+                                            <li>Agregar nuevos endpoints</li>
+                                            <li>
+                                                Ajustes a moodelos y relaciones
+                                            </li>
+                                            <li>Corrección de bugs</li>
+                                            <li>
+                                                Mejoras pequeñas en lógica de
+                                                negocio
+                                            </li>
+                                            <li>Soporte a código existente</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div
+                            class="row translate-right m-1 d-flex justify-content-center mt-4"
+                        >
+                            <hr />
+                            <h2 class="p-4 pb-3 pt-3 text-center fs-3">
+                                Project Setup & Configuration
+                            </h2>
+                            <div
+                                class="col-12 col-md-12 col-lg-12 mt-4 services-card p-4 mb-2"
+                            >
+                                <div class="row">
+                                    <div
+                                        class="col-12 col-md-12 d-flex justify-content-center"
+                                    >
+                                        <img
+                                            src="/images/Setup.png"
+                                            alt="ServiceDashboardExample"
+                                            class="img-fluid project-image"
+                                        />
+                                    </div>
+                                    <div class="col-12 col-md-12 text-start">
+                                        <hr />
+                                        <ul class="service-list">
+                                            <li>
+                                                Inicialización de proyectos
+                                                backend
+                                            </li>
+                                            <li>
+                                                Configuración de entorno (.env)
+                                            </li>
+                                            <li>
+                                                Base de datos (PostgreSQL)datos
+                                            </li>
+                                            <li>
+                                                Estructura inicial del proyecto
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
